@@ -1,29 +1,21 @@
-###Sinatra Flash Card Application
+###Sinatra Flash Card Application!!!
 
-###Heroku Link
+####Heroku Link
 
 http://rocky-mountain-7265.herokuapp.com/
 
+####Original Repository
+
+https://github.com/CharlieTruong/sinatra_flash_card
+
 ####Contributors -
 
-Charlie Truong, charlietruong;
+Charlie Truong, [charlie](https://github.com/charlietruong)
 
 Sam Blackman, [tsamb](https://github.com/tsamb)
 
-Junting,
+Junting, [gnitnuj](https://github.com/gnitnuj)
 
-Lorena Mesa, lorenanicole;
+Lorena Mesa, [lorena](https://github.com/lorenanicole)
 
 Shawn Klein,
-
-Gary Sperka,
-
-####Steps to Start Project -
-
-In Root Directory execute the following steps sequentially:
-
-```bundle exec db:create```
-
-```bundle exec db:migrate```
-
-```bundle exec db:seed```
