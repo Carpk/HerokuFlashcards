@@ -1,0 +1,35 @@
+#bar{
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 5px; 
+    overflow: hidden;
+    display:inline-block;
+    margin:0px 10px 5px 5px;
+    height: 25px;
+    vertical-align:top;
+}
+
+#progress {
+    color: #fff;
+    text-align: right;
+    height: 25px;
+    width: 0;
+    background-color: #3366FF; 
+    border-radius: 3px; 
+    margin: 0;
+    z-index: 1;
+    line-height: 24px;
+}
+
+#progress-percentage {
+    text-align: center;
+};
+
+#next, #submit_score{
+    margin: 0;
+}
+
+form{
+    width: 40%;
+    margin: 0 auto;
+}

@@ -1,0 +1,48 @@
+
+  <%if @deck_id %>
+      <div>
+        <h2>This round</h2>
+        <div>Correct: </div><div><%= @correct %>, (<%= @percent %>)%</div>
+        <br>
+        <div>Incorrect: </div><div><%= @incorrect %></div>
+        <br>
+        <div>Skipped: </div><div><%= @skipped %></div>
+      </div>
+  <% end %>
+
+  <%if @global_stats %>
+    <br>
+    <div>
+        <div><h2>All rounds</h2></div>
+        <div>Correct: </div><div><%= @global_correct %>, (<%= @global_percent %>)%</div>
+        <div>Incorrect: </div><div><%= @global_incorrect %></div>
+        <div>Skipped: </div><div><%= @global_skipped %></div>
+      </div>
+  <% end %>
+
+  <%if @deck_id %>
+    <br>
+    <div class="row">
+
+      <div class= "col-sm-4">
+        <a href = <%= "/round/#{@deck_id.to_s}#download" %>>
+          <button class="btn btn-lg btn-primary btn-block" type="submit">Play this deck again</button>
+        </a>
+      </div>
+
+
+    <div class= "col-sm-4">
+      <a href = "/decks#download">
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Choose another deck</button>
+      </a>
+    </div>
+
+    <div class= "col-sm-4">
+      <a href = "/signout">
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign out</button>
+      </a>
+    </div>
+  <% end %>
+
+
+

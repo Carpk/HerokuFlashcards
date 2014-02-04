@@ -1,0 +1,7 @@
+<div class="hero-unit">
+<h2>Choose a deck:</h2>
+
+<% @decks.each do |deck| %>
+<li><h3><a href=<%= "/round/#{deck.id.to_s}#download" %>><%= deck.name.split.map(&:capitalize).join(' ')  %></a></h3></li>
+<% end %>
+</div>
